@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>minipy editor</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/minipy-editor.css" />
+</head>
+<body>
+
+  <div id="toplevel-container">
+    <div>
+      <button type="button" class="btn btn-default"
+			    id="btn-clear">Clear</button>
+      <button type="button" class="btn btn-default"
+			    id="btn-exec">Exec</button>
+    </div>
+    <pre id="editor"></pre>
+  </div>
+  <div id="toplevel-side">
+    <h3>minipy Editor</h3>
+    <p>Get the code from the <a href="https://github.com/LaurentMazare/ocaml-minipy">ocaml-minipy GitHub repo</a>.</p>
+    <h4>Command</h4>
+    <table class="table table-striped table-condensed">
+      <tbody class>
+	<tr>
+	  <td>Enter/Return</td>
+	  <td>Newline</td>
+	</tr>
+	<tr>
+	  <td>Shift + Enter</td>
+	  <td>Evaluate code</td>
+	</tr>
+	<tr>
+	  <td>Ctrl + l</td>
+	  <td>Clear display</td>
+	</tr>
+      </tbody>
+    </table>
+    <h4>Examples</h4>
+    <select id="examplelist"></select>
+    <h4>Output</h4>
+    <select id="modelist"></select>
+    <pre id="output"></pre>
+  </div>
+  <script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    window.onhashchange = function() { window.location.reload() }
+    var hash = window.location.hash.replace(/^#/,"");
+    var fields = hash.split(/&/);
+    var prefix = "";
+    var version = "";
+    for(var f in fields){
+      var data = fields[f].split(/=/);
+      if(data[0] == "version"){
+        version = data[1].replace(/%20|%2B/g,"+");
+        break;
+      }
+    }
+
+    function load_script(url){
+        var fileref=document.createElement('script');
+        fileref.setAttribute("type","text/javascript");
+        fileref.setAttribute("src", prefix+(version==""?"":(version+"/"))+url);
+        document.getElementsByTagName("head")[0].appendChild(fileref);
+    }
+    load_script("editor_js.bc.js");
+  </script>
+
+</body>
+</html>
