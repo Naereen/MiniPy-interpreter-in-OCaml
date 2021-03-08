@@ -10,9 +10,15 @@ This is a work in progress, most of the supported features are only partially im
 
 ## Screenshots
 
+Here is an example of using the [MiniPy OCaml console](https://perso.crans.org/besson/publis/MiniPy/console.html), to define a `sum` function. It shows that a lot of basic construct of the Python language are supported, but almost no functions from the standard library are available:
+
 ![Screenshot showing the use of MiniPy OCaml console (console.html)](./screenshots/screenshots_minipy_ocaml_1.png)
 
+Here is a second example, using the [MiniPy OCaml editor](https://perso.crans.org/besson/publis/MiniPy/editor.html), loaded with one of the example files, showing a Eratosthene Sieve to detect prime numbers:
+
 ![Screenshot showing the use of MiniPy OCaml editor (editor.html)](./screenshots/screenshots_minipy_ocaml_2.png)
+
+Here is a third and last example, using the [MiniPy OCaml editor](https://perso.crans.org/besson/publis/MiniPy/editor.html), loaded with one of the example files, showing the prime decompositions of integers. I added a few comments (`# blabla`) to show some features supported by MiniPy:
 
 ![Screenshot showing the use of MiniPy OCaml editor (editor.html)](./screenshots/screenshots_minipy_ocaml_3.png)
 
@@ -22,7 +28,7 @@ This is a work in progress, most of the supported features are only partially im
 
 ### Where is it hosted on my website?
 
-<https://perso.crans.org/besson/publis/MiniPy/>
+On my websites, it is as <https://perso.crans.org/besson/publis/MiniPy/> and <https://besson.link/publis/MiniPy/>.
 
 ### Where do the files come from?
 
