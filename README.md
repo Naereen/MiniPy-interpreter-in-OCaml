@@ -10,11 +10,11 @@ This is a work in progress, most of the supported features are only partially im
 
 ## Screenshots
 
-![TODO](./screenshots/screenshots_minipy_ocaml_1.png)
+![Screenshot showing the use of MiniPy OCaml console (console.html)](./screenshots/screenshots_minipy_ocaml_1.png)
 
-![TODO](./screenshots/screenshots_minipy_ocaml_2.png)
+![Screenshot showing the use of MiniPy OCaml editor (editor.html)](./screenshots/screenshots_minipy_ocaml_2.png)
 
-![TODO](./screenshots/screenshots_minipy_ocaml_3.png)
+![Screenshot showing the use of MiniPy OCaml editor (editor.html)](./screenshots/screenshots_minipy_ocaml_3.png)
 
 ---
 
